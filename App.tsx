@@ -4,6 +4,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import CompaniesPage from './pages/CompaniesPage';
 import CompanyDetailPage from './pages/CompanyDetailPage';
+import CommunityPage from './pages/CommunityPage'; // Added import
 
 const App: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ const App: React.FC = () => {
           <Route path="/companies/:companyId" element={<CompanyDetailPage />} />
           {/* Placeholder routes for other nav items */}
           <Route path="/resources" element={<div className="container mx-auto px-4 py-8 text-center">Resources Page (Placeholder)</div>} />
-          <Route path="/community" element={<div className="container mx-auto px-4 py-8 text-center">Community Page (Placeholder)</div>} />
+          <Route path="/community" element={<CommunityPage />} /> {/* Updated route */}
         </Routes>
       </main>
     </div>
