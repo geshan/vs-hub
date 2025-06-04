@@ -42,6 +42,17 @@ const Header: React.FC = () => {
                   {item.name}
                 </Link>
               ))}
+              {/* Added Community Link */}
+              <Link
+                to="/community"
+                className={`px-3 py-2 rounded-md text-sm font-medium ${
+                  location.pathname === "/community" || location.pathname.startsWith("/community")
+                    ? 'text-brand-blue border-b-2 border-brand-blue'
+                    : 'text-gray-600 hover:text-brand-blue hover:bg-brand-blue-light'
+                }`}
+              >
+                Community
+              </Link>
             </nav>
           </div>
 
