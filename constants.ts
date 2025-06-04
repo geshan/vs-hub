@@ -1,0 +1,117 @@
+
+import { Company, NavItem, TabKey } from './types';
+
+export const NAV_ITEMS: NavItem[] = [
+  { name: 'Home', path: '/' },
+  { name: 'Companies', path: '/companies' },
+  { name: 'Resources', path: '/resources' },
+  { name: 'Community', path: '/community' },
+];
+
+export const MOCK_COMPANIES: Company[] = [
+  {
+    id: 'tech-solutions-inc',
+    name: 'Tech Solutions Inc',
+    logoUrl: 'https://picsum.photos/seed/techsolutions/200/200',
+    description: 'A leading provider of innovative software solutions for businesses of all sizes.',
+    longDescription: 'Tech Solutions Inc is a global technology company that provides innovative software and IT solutions to businesses of all sizes. With a focus on cutting-edge technologies and a commitment to excellence, Tech Solutions Inc helps clients achieve their business goals through digital transformation. Their services range from custom software development to cloud computing and cybersecurity.',
+    sponsorship: true,
+    employeeCount: '1000-5000 employees',
+    industry: 'Information Technology & Services',
+    foundedYear: 2005,
+    headquarters: 'San Francisco, CA',
+    website: 'www.techsolutions.example.com',
+    relatedCompanies: [
+      { id: 'global-innovations-corp', name: 'Global Innovations', logoUrl: 'https://picsum.photos/seed/globalinnovations_related/150/150', industry: 'Conglomerate', description: 'Portfolio of products' },
+      { id: 'nextgen-technologies', name: 'NextGen Dynamics', logoUrl: 'https://picsum.photos/seed/nextgen_related/150/150', industry: 'R&D', description: 'Future tech' },
+      { id: 'apex-systems', name: 'Apex Solutions Ltd.', logoUrl: 'https://picsum.photos/seed/apex_related/150/150', industry: 'IT Consulting', description: 'Optimize infrastructure' },
+    ]
+  },
+  {
+    id: 'global-innovations-corp',
+    name: 'Global Innovations Corp',
+    logoUrl: 'https://picsum.photos/seed/globalinnovations/200/200',
+    description: 'A multinational conglomerate with a diverse portfolio of products and services.',
+    longDescription: 'Global Innovations Corp has a rich history of pioneering new markets and technologies. Their diversified operations span across consumer electronics, automotive, and financial services, making them a key player in the global economy.',
+    sponsorship: false,
+    employeeCount: '10,000+ employees',
+    industry: 'Diversified Conglomerate',
+    foundedYear: 1980,
+    headquarters: 'New York, NY',
+    website: 'www.globalinnovations.example.com',
+     relatedCompanies: [
+      { id: 'tech-solutions-inc', name: 'Tech Solutions Inc', logoUrl: 'https://picsum.photos/seed/techsolutions_related/150/150', industry: 'Software', description: 'Innovative software' },
+    ]
+  },
+  {
+    id: 'nextgen-technologies',
+    name: 'NextGen Technologies',
+    logoUrl: 'https://picsum.photos/seed/nextgen/200/200',
+    description: 'A fast-growing startup focused on developing cutting-edge technologies for the future.',
+    longDescription: 'NextGen Technologies is at the forefront of artificial intelligence and machine learning research. They are dedicated to creating sustainable and impactful solutions for global challenges, attracting top talent from around the world.',
+    sponsorship: true,
+    employeeCount: '50-200 employees',
+    industry: 'Artificial Intelligence',
+    foundedYear: 2018,
+    headquarters: 'Austin, TX',
+    website: 'www.nextgen.example.com',
+  },
+  {
+    id: 'pioneer-industries',
+    name: 'Pioneer Industries',
+    logoUrl: 'https://picsum.photos/seed/pioneer/200/200',
+    description: 'A well-established manufacturing company with a long history of innovation and quality.',
+    longDescription: 'Pioneer Industries has been a leader in industrial manufacturing for over 50 years. They specialize in heavy machinery and precision engineering, known for their robust products and commitment to quality standards.',
+    sponsorship: false,
+    employeeCount: '5000-10000 employees',
+    industry: 'Manufacturing',
+    foundedYear: 1965,
+    headquarters: 'Chicago, IL',
+    website: 'www.pioneerindustries.example.com',
+  },
+  {
+    id: 'apex-systems',
+    name: 'Apex Systems',
+    logoUrl: 'https://picsum.photos/seed/apex/200/200',
+    description: 'A leading IT consulting firm that helps businesses optimize their technology infrastructure.',
+    longDescription: 'Apex Systems provides expert IT consulting services, including system integration, cloud migration, and data analytics. They partner with businesses to enhance efficiency and drive growth through strategic technology adoption.',
+    sponsorship: true,
+    employeeCount: '200-1000 employees',
+    industry: 'IT Consulting',
+    foundedYear: 2010,
+    headquarters: 'Boston, MA',
+    website: 'www.apexsystems.example.com',
+  },
+   {
+    id: 'strategic-solutions-group',
+    name: 'Strategic Solutions Group',
+    logoUrl: 'https://picsum.photos/seed/strategic/200/200',
+    description: 'A management consulting firm that provides strategic advice to businesses across various industries.',
+    longDescription: 'Strategic Solutions Group helps organizations navigate complex business challenges. Their expertise in market analysis, operational improvement, and strategic planning enables clients to achieve sustainable growth and competitive advantage.',
+    sponsorship: false,
+    employeeCount: '100-500 employees',
+    industry: 'Management Consulting',
+    foundedYear: 2008,
+    headquarters: 'London, UK',
+    website: 'www.strategicsg.example.com',
+  },
+  {
+    id: 'dynamic-enterprises',
+    name: 'Dynamic Enterprises',
+    logoUrl: 'https://picsum.photos/seed/dynamic/200/200',
+    description: 'A diversified holding company with investments in various sectors, including technology, real estate, and finance.',
+    longDescription: 'Dynamic Enterprises is an investment powerhouse with a diverse portfolio. They focus on long-term value creation by supporting innovative companies and ventures across high-growth sectors like technology, sustainable real estate, and fintech.',
+    sponsorship: true,
+    employeeCount: '50-200 employees (core team)',
+    industry: 'Investment Holdings',
+    foundedYear: 2012,
+    headquarters: 'Singapore',
+    website: 'www.dynamicent.example.com',
+  },
+];
+
+export const COMPANY_DETAIL_TABS = [
+  { key: TabKey.Overview, label: 'Overview' },
+  { key: TabKey.Jobs, label: 'Jobs' },
+  { key: TabKey.Reviews, label: 'Reviews' },
+];
